@@ -9,9 +9,9 @@ export default function Home() {
     <>
       <Header />
 
-      <main className="pt-24">
-        <BannerCarousel /> 
-        
+      <main className="pt-20">
+        <BannerCarousel />
+
 
         {/* ============ Tentang Section =========== */}
         <section
@@ -160,7 +160,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-gray-800 px-4 py-2 text-sm font-semibold hover:bg-gray-100 transition">
-                  Cek Disini
+                Cek Disini
               </a>
             </div>
 
@@ -190,7 +190,7 @@ export default function Home() {
             Our Products
           </h2>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-y-10 gap-x-6 justify-items-center">
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
               <img
                 src="/images/ultrav.png"
                 alt="Ultra Voucher"
@@ -198,7 +198,7 @@ export default function Home() {
               />
               <p className="mt-2 text-sm">Ultra Voucher</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
               <img
                 src="/images/vougame.png"
                 alt="Vouchers Game"
@@ -206,7 +206,7 @@ export default function Home() {
               />
               <p className="mt-2 text-sm text-center">Vouchers Game</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
               <img
                 src="/images/art.png"
                 alt="Art Shop"
@@ -214,7 +214,7 @@ export default function Home() {
               />
               <p className="mt-2 text-sm">Art Shop</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
               <img
                 src="/images/book.png"
                 alt="Books"
@@ -222,7 +222,7 @@ export default function Home() {
               />
               <p className="mt-2 text-sm">Books</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
               <img
                 src="/images/cook.png"
                 alt="Cooking"
@@ -230,7 +230,7 @@ export default function Home() {
               />
               <p className="mt-2 text-sm text-center">Cooking & Coffee</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
               <img
                 src="/images/digital.png"
                 alt="Digital"
@@ -239,7 +239,7 @@ export default function Home() {
               <p className="mt-2 text-sm">Digital</p>
             </div>
             {/* Tambahkan item lain di bawah ini */}
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
               <img
                 src="/images/game.png"
                 alt="Games"
@@ -247,7 +247,7 @@ export default function Home() {
               />
               <p className="mt-2 text-sm">Games</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
               <img
                 src="/images/garden.png"
                 alt="Gardening"
@@ -255,7 +255,7 @@ export default function Home() {
               />
               <p className="mt-2 text-sm">Gardening</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
               <img
                 src="/images/kpop.png"
                 alt="K-POP"
@@ -263,7 +263,7 @@ export default function Home() {
               />
               <p className="mt-2 text-sm">K-POP</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
               <img
                 src="/images/musik.png"
                 alt="Musics"
@@ -271,7 +271,7 @@ export default function Home() {
               />
               <p className="mt-2 text-sm">Musics</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
               <img
                 src="/images/pets.png"
                 alt="Pets"
@@ -279,7 +279,7 @@ export default function Home() {
               />
               <p className="mt-2 text-sm">Pets</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
               <img
                 src="/images/toys.png"
                 alt="Toys"
@@ -296,24 +296,24 @@ export default function Home() {
             Mitra Industri
           </h2>
           <div className="flex justify-center gap-10 items-center flex-wrap">
-            <img src="/images/ebh.png" alt="eurekabook" className="h-12" />
-            <img src="/logo.png" alt="jaja.id" className="h-12" />
-            <img src="/images/jajato.png" alt="jaja_auto" className="h-12" />
-            <img src="/images/katarasa.png" alt="kata_rasa" className="h-12" />
+            <img src="/images/ebh.png" alt="eurekabook" className="h-12 transition-all duration-500 ease-in-out transform hover:-translate-y-2" />
+            <img src="/logo.png" alt="jaja.id" className="h-12 transition-all duration-500 ease-in-out transform hover:-translate-y-2" />
+            <img src="/images/jajato.png" alt="jaja_auto" className="h-12 transition-all duration-500 ease-in-out transform hover:-translate-y-2" />
+            <img src="/images/katarasa.png" alt="kata_rasa" className="h-12 transition-all duration-500 ease-in-out transform hover:-translate-y-2" />
             <img
               src="/images/rajacepat.png"
               alt="raja_cepat"
-              className="h-12"
+              className="h-12 transition-all duration-500 ease-in-out transform hover:-translate-y-2"
             />
             <img
               src="/images/eurekalogs.png"
               alt="eurekalogs"
-              className="h-12"
+              className="h-12 not-even:transition-all duration-500 ease-in-out transform hover:-translate-y-2"
             />
             <img
               src="/images/masterdis.png"
               alt="master_diskon"
-              className="h-12"
+              className="h-12 transition-all duration-500 ease-in-out transform hover:-translate-y-2"
             />
           </div>
         </section>
