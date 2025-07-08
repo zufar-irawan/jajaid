@@ -10,7 +10,7 @@ export default function Home() {
       <Header />
 
       <main className="pt-24">
-        <BannerCarousel />
+        {/* <BannerCarousel /> */}
         <section
           className="relative w-full h-screen flex items-center justify-center text-center"
           style={{
