@@ -40,9 +40,9 @@ const Header = () => {
         }
         `}>
         <ul className="flex gap-6 font-medium text-gray-700">
-          <li className="hover:text-blue-500 transition"><Link href={"#"}>Beranda</Link></li>
-          <li className="hover:text-blue-500 transition"><Link href={"#"}>Tentang</Link></li>
-          <li className="hover:text-blue-500 transition"><Link href={"#"}>Kontak</Link></li>
+          <li className="hover:text-blue-500 transition"><Link href={"#beranda"}>Beranda</Link></li>
+          <li className="hover:text-blue-500 transition"><Link href={"#tentang"}>Tentang</Link></li>
+          <li className="hover:text-blue-500 transition"><Link href={"#visiMisi"}>Visi&Misi</Link></li>
         </ul>
       </div>
 

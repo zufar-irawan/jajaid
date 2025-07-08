@@ -18,3 +18,7 @@
     --foreground: #ededed;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
