@@ -15,7 +15,7 @@ const BannerCarousel = () => {
   autoplaySpeed: 4000,
   fade: true,
   arrows: false,
-  pauseOnHover: false    // opsional: jangan berhenti kalau mouse di atas
+  pauseOnHover: false    
 };
 
 
@@ -42,17 +42,14 @@ const BannerCarousel = () => {
         ))}
       </Slider>
 
-      {/* Konten teks di tengah */}
+      
       <div className="absolute inset-0 flex items-center justify-center text-center z-10 pointer-events-none">
         <div className="text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">JAJA ID</h1>
           <p className="text-md md:text-lg mb-6">Company Profile Theme</p>
           <div className="flex flex-col md:flex-row justify-center gap-4 pointer-events-auto">
             <a href="#" className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-500 transition">
-              READ MORE
-            </a>
-            <a href="#" className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition">
-              OUR WORK
+              READ MORE!
             </a>
           </div>
         </div>

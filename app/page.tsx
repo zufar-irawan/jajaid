@@ -110,7 +110,6 @@ export default function Home() {
           <p className="text-gray-600 mb-6">
             Prestasi membanggakan di tingkat nasional & internasional
           </p>
-          <p className="text-sm text-gray-400">(Slider placeholder)</p>
         </section>
 
         {/* ============ Wisuda Section =========== */}
