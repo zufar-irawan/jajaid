@@ -17,7 +17,7 @@ const Header = () => {
   }, [])
 
   return (
-    <nav className=" bg-blue-100 fixed h-20 z-50 top-0 w-full overflow-hidden">
+    <nav className=" bg-blue-100 fixed h-20 z-50 top-0 w-full overflow-hidden shadow-2xl rounded-b-4xl">
       <div className={`transition-all duration-700 ease-in-out fixed z-50 p-1
         ${isScrolled
           ? 'left-4'
