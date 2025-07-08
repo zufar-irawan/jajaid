@@ -10,7 +10,7 @@ export default function Home() {
       <Header />
 
       <main className="pt-24">
-        <BannerCarousel />
+        {/* <BannerCarousel /> */}
         <section
           className="relative w-full h-screen flex items-center justify-center text-center"
           style={{
@@ -138,14 +138,14 @@ export default function Home() {
                   </div>
 
                   {/* konten gambar */}
-                  <div className="lg:w-1/2">
+                  <div className='lg:w-1/2'>
                     <div className="rounded-lg overflow-hidden shadow-xl h-full">
                       <Image
                         src="/images/jaja_id.png"
                         alt="JajaID"
                         width={500}
                         height={500}
-                        loading="lazy"
+                        loading='lazy'
                       />
                     </div>
                   </div>
@@ -170,7 +170,7 @@ export default function Home() {
               <img
                 src="/images/md.png"
                 alt="Master Diskon"
-                className="h-14 mb-4"/>
+                className="h-14 mb-4" />
               <p className="text-lg">Kamu suka Travelling?</p>
               <h2 className="text-2xl font-bold mb-4">Master Diskon Aja!</h2>
               <a
@@ -178,7 +178,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-gray-800 px-4 py-2 text-sm font-semibold hover:bg-gray-100 transition">
-                Cek Disini
+                  Cek Disini
               </a>
             </div>
 
