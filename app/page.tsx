@@ -14,12 +14,12 @@ export default function Home() {
         <section
           className="relative w-full h-screen flex items-center justify-center text-center"
           style={{
-            background:
-              "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/Banner2.jpeg')",
+            background: "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/Banner2.jpeg')",
             backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundPosition: "center"
           }}
         >
+
           <div className="relative z-10 text-white px-4">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">JAJA ID</h1>
             <p className="text-xl mb-6">1st Marketplace For your Hobbies</p>
@@ -42,7 +42,7 @@ export default function Home() {
         </section>
 
         {/* ============ Tentang Section =========== */}
-        <section id="tentang" className="py-auto px-6 md:px-20 bg-white">
+        <section id="tentang" className="min-h-screen py-auto px-6 md:px-20 bg-white">
           <div className="py-28">
             <div className="container mx-auto px-4">
               <div className="text-center mb-16">
@@ -56,7 +56,7 @@ export default function Home() {
               <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col lg:flex-row gap-12 items-stretch">
                   {/* konten teks */}
-                  <div className="flex">
+                  <div className="flex transition-all duration-500 ease-in-out transform hover:-translate-y-2">
                     <div className="bg-white rounded-lg shadow-lg p-4 sm:p-8 space-y-11 h-full">
                       <div>
                         <p>
@@ -77,7 +77,7 @@ export default function Home() {
                   </div>
 
                   {/* konten gambar */}
-                  <div className="lg:w-1/2">
+                  <div className='lg:w-1/2'>
                     <div className="rounded-lg overflow-hidden shadow-xl h-full">
                       <Image
                         src="/images/jaja_id.png"
@@ -106,34 +106,38 @@ export default function Home() {
             </div>
 
             <div className="container mx-auto px-4">
-              <div className="max-w-7xl mx-auto">
-                <div className="flex flex-col lg:flex-row gap-12 items-stretch">
-                  {/* konten teks */}
-                  <div className="flex">
-                    <div className="bg-[#fdb739] text-white rounded-lg shadow-lg p-4 sm:p-8 space-y-11 h-full">
+              <div className="mx-auto">
+                <div className="flex lg:flex-row gap-10">
+                  {/* visi */}
+                  <div className="flex-1 transition-all duration-500 ease-in-out transform hover:-translate-y-2">
+                    <div className="bg-yellow-400 text-white rounded-lg shadow-lg p-4 sm:p-8 space-y-11 h-full">
                       <div>
-                        <p className="mb-2">
-                          Menjadi Marketplace Khusus Hobby Terbesar di
-                          Indoonesia
-                        </p>
-                        <p className="mt-4 mb-2">
-                          Jaja memiliki slogan 1st Marketplace For your Hobbies
-                          karena Jaja.id merupakan marketplace pertama khusus
-                          hobby di Indonesia.
-                        </p>
+                        <p className='text-2xl text-right text-bold mb-6'>
+                          Visi</p>
+                        <p className='text-xl text-bold text-right mb-2'>
+                          Menjadi Marketplace Khusus Hobby Terbesar di Indonesia</p>
+                        <p className="text-sm mt-4 text-right mb-2">
+                          Visi kami adalah menjadi marketplace khusus hobi terbesar dan
+                          terpercaya di Indonesia dengan menghadirkan platform yang
+                          menghubungkan para pecinta hobi dari seluruh penjuru negeri.
+                          Kami berkomitmen untuk menyediakan ekosistem yang lengkap, aman,
+                          dan inspiratif bagi komunitas hobi—mulai dari koleksi, peralatan,
+                          hingga layanan pendukung—sekaligus mendorong pertumbuhan ekonomi
+                          kreatif dan memberdayakan pelaku usaha lokal di berbagai bidang
+                          hobi.</p>
                       </div>
                     </div>
                   </div>
 
                   {/* konten gambar */}
-                  <div className="lg:w-1/2">
+                  <div className='lg:w-1/2'>
                     <div className="rounded-lg overflow-hidden shadow-xl h-full">
                       <Image
                         src="/images/jaja_id.png"
                         alt="JajaID"
                         width={500}
                         height={500}
-                        loading="lazy"
+                        loading='lazy'
                       />
                     </div>
                   </div>
