@@ -188,7 +188,7 @@ export default function Home() {
                 alt="Eureka Bookhouse"
                 className="h-14 mb-4"
               />
-              <p className="text-lg">Mau cari buku? Yuk cek</p>
+              <p className="text-lg">Mau cari buku? Yuk cek buruan</p>
               <h2 className="text-2xl font-bold mb-4">Eureka Bookhouse</h2>
               <a
                 href="https://eurekabookhouse.com/"
