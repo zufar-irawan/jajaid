@@ -102,7 +102,7 @@ export default function Home() {
                 <div className="flex flex-col lg:flex-row gap-12 items-stretch">
                   {/* konten teks */}
                   <div className="flex">
-                    <div className="bg-yellow-500 text-white rounded-lg shadow-lg p-4 sm:p-8 space-y-11 h-full">
+                    <div className="bg-[#fdb739] text-white rounded-lg shadow-lg p-4 sm:p-8 space-y-11 h-full">
                       <div>
                         <p className='mb-2'>
                           Menjadi Marketplace Khusus Hobby Terbesar di Indoonesia</p>
@@ -142,7 +142,7 @@ export default function Home() {
           <p className="text-sm text-gray-400">(Slider placeholder)</p>
         </section>
 
-        {/* ============ Wisuda Section =========== */}
+        {/* ============ our services =========== */}
         <section className="py-16 px-6 md:px-20 bg-gray-900 text-white text-center">
           <h2 className="text-2xl font-bold text-[#fdb739] mb-6">
             Our Services
