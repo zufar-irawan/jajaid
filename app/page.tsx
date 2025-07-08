@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Header from "@/component/header"
 
 export default function Home() {
   return (
-    <h1>Testing</h1>
+    <Header />
   )
 }
