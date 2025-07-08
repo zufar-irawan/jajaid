@@ -1,8 +1,8 @@
 import Header from "@/component/header";
 import Footer from "@/component/Footer";
-import Slider from 'react-slick'
-import Image from 'next/image';
-import BannerCarousel from '@/component/BannerCarousel';
+import Slider from "react-slick";
+import Image from "next/image";
+import BannerCarousel from "@/component/BannerCarousel";
 
 export default function Home() {
   return (
@@ -11,32 +11,30 @@ export default function Home() {
 
       <main className="pt-24">
         <BannerCarousel />
-          <section
-              className="relative w-full h-screen flex items-center justify-center text-center"
-              style={{
-                background: "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/Banner2.jpeg')",
-                backgroundSize: "cover",
-                backgroundPosition: "center"
-              }}
-            >
-
+        <section
+          className="relative w-full h-screen flex items-center justify-center text-center"
+          style={{
+            background:
+              "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/Banner2.jpeg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
           <div className="relative z-10 text-white px-4">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              JAJA ID
-            </h1>
-            <p className="text-xl mb-6">
-              1st Marketplace For your Hobbies
-            </p>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">JAJA ID</h1>
+            <p className="text-xl mb-6">1st Marketplace For your Hobbies</p>
 
             <div className="flex flex-col md:flex-row justify-center gap-4">
               <a
                 href="#"
-                className="bg-yellow-400 shadow-lg text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-500 transition">
+                className="bg-yellow-400 shadow-lg text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-500 transition"
+              >
                 Read More
               </a>
               <a
                 href="#"
-                className="bg-blue-600 shadow-lg text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition">
+                className="bg-blue-600 shadow-lg text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition"
+              >
                 Our Store
               </a>
             </div>
@@ -48,7 +46,9 @@ export default function Home() {
           <div className="py-28">
             <div className="container mx-auto px-4">
               <div className="text-center mb-16">
-                <h2 className="text-3xl font-bold text-center text-blue-400 mb-16">Tentang Kami</h2>
+                <h2 className="text-3xl font-bold text-center text-blue-400 mb-16">
+                  Tentang Kami
+                </h2>
               </div>
             </div>
 
@@ -60,27 +60,31 @@ export default function Home() {
                     <div className="bg-white rounded-lg shadow-lg p-4 sm:p-8 space-y-11 h-full">
                       <div>
                         <p>
-                          Jaja.id merupakan salah satu Marketplace pertama Khusus Hobby di
-                          Indonesia yang menyediakan fasilitas jual-beli dari konsumen ke
-                          konsumen. Semua orang dapat membuka toko online di Jaja.id dan
-                          melayani pembeli dari seluruh Indonesia untuk membantu memenuhi
-                          kebutuhan hobby masyarakat Indonesia.</p>
+                          Jaja.id merupakan salah satu Marketplace pertama
+                          Khusus Hobby di Indonesia yang menyediakan fasilitas
+                          jual-beli dari konsumen ke konsumen. Semua orang dapat
+                          membuka toko online di Jaja.id dan melayani pembeli
+                          dari seluruh Indonesia untuk membantu memenuhi
+                          kebutuhan hobby masyarakat Indonesia.
+                        </p>
                         <p className="mt-4 mb-2">
-                          Jaja memiliki slogan 1st Marketplace For your Hobbies karena Jaja.id
-                          merupakan marketplace pertama khusus hobby di Indonesia.</p>
+                          Jaja memiliki slogan 1st Marketplace For your Hobbies
+                          karena Jaja.id merupakan marketplace pertama khusus
+                          hobby di Indonesia.
+                        </p>
                       </div>
                     </div>
                   </div>
 
                   {/* konten gambar */}
-                  <div className='lg:w-1/2'>
+                  <div className="lg:w-1/2">
                     <div className="rounded-lg overflow-hidden shadow-xl h-full">
                       <Image
                         src="/images/jaja_id.png"
                         alt="JajaID"
                         width={500}
                         height={500}
-                        loading='lazy'
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -95,7 +99,9 @@ export default function Home() {
           <div className="py-28">
             <div className="container mx-auto px-4">
               <div className="text-center mb-16">
-                <h2 className="text-3xl font-bold text-center text-white mb-16">Visi & Misi</h2>
+                <h2 className="text-3xl font-bold text-center text-white mb-16">
+                  Visi & Misi
+                </h2>
               </div>
             </div>
 
@@ -106,24 +112,28 @@ export default function Home() {
                   <div className="flex">
                     <div className="bg-[#fdb739] text-white rounded-lg shadow-lg p-4 sm:p-8 space-y-11 h-full">
                       <div>
-                        <p className='mb-2'>
-                          Menjadi Marketplace Khusus Hobby Terbesar di Indoonesia</p>
+                        <p className="mb-2">
+                          Menjadi Marketplace Khusus Hobby Terbesar di
+                          Indoonesia
+                        </p>
                         <p className="mt-4 mb-2">
-                          Jaja memiliki slogan 1st Marketplace For your Hobbies karena Jaja.id
-                          merupakan marketplace pertama khusus hobby di Indonesia.</p>
+                          Jaja memiliki slogan 1st Marketplace For your Hobbies
+                          karena Jaja.id merupakan marketplace pertama khusus
+                          hobby di Indonesia.
+                        </p>
                       </div>
                     </div>
                   </div>
 
                   {/* konten gambar */}
-                  <div className='lg:w-1/2'>
+                  <div className="lg:w-1/2">
                     <div className="rounded-lg overflow-hidden shadow-xl h-full">
                       <Image
                         src="/images/jaja_id.png"
                         alt="JajaID"
                         width={500}
                         height={500}
-                        loading='lazy'
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -133,21 +143,33 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ============ Prestasi Section =========== */}
-        <section id="prestasi" className="py-16 text-center bg-gray-50">
-          <h2 className="text-2xl font-bold text-[#fdb739] mb-2">
-            Capaian Prestasi
-          </h2>
-          <p className="text-gray-600 mb-6">
-            Prestasi membanggakan di tingkat nasional & internasional
-          </p>
-          <p className="text-sm text-gray-400">(Slider placeholder)</p>
+        {/* ============ our services =========== */}
+        <section id="prestasi" className="w-full flex flex-col md:flex-row" >
+          <div className="flex-1 bg-gradient-to-r from-orange-500 to-yellow-400 p-10 flex flex-col items-center justify-center text-center">
+            <img src="/images/md.png" alt="Master Diskon" className="h-14 mb-4"/>
+            <p className="text-lg text-gray-800">Kamu suka Travelling?</p>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Master Diskon Aja!
+            </h2>
+            <a href="https://masterdiskon.com/id-id" target="_blank" rel="noopener noreferrer" className="border border-gray-700 px-4 py-2 text-sm font-semibold hover:bg-gray-200 transition">
+            Cek Disini
+            </a>
+          </div>
+
+          <div className="flex-1 bg-gradient-to-r from-blue-800 to-blue-400 p-10 flex flex-col items-center justify-center text-center text-white">
+            <img src="/images/eurekabook.png" alt="Eureka Bookhouse"className="h-14 mb-4"/>
+            <p className="text-lg">Mau cari buku? Yuk cek</p>
+            <h2 className="text-2xl font-bold mb-4">Eureka Bookhouse</h2>
+            <a href="https://eurekabookhouse.com/" target="_blank" rel="noopener noreferrer" className="border border-white px-4 py-2 text-sm font-semibold hover:bg-white hover:text-blue-700 transition">
+            Cek Disini
+            </a>
+          </div>
         </section>
 
-        {/* ============ our services =========== */}
+        {/* ============ our products =========== */}
         <section className="py-16 px-6 md:px-20 bg-gray-900 text-white text-center">
           <h2 className="text-2xl font-bold text-[#fdb739] mb-6">
-            Our Services
+            Our Products
           </h2>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-y-10 gap-x-6 justify-items-center">
             <div className="flex flex-col items-center">
@@ -278,17 +300,66 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ============ Testimoni Section =========== */}
-        <section className="py-16 px-6 bg-gray-50 text-center">
-          <h2 className="text-2xl font-bold text-[#fdb739] mb-2">
-            Testimoni Alumni
-          </h2>
-          <p className="text-sm text-gray-400">(Slider Testimoni Alumni)</p>
+        {/* ============ banner Section =========== */}
+        <section className="bg-gradient-to-r from-orange-400 via-yellow-400 to-yellow-300 py-10 px-4">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div className="flex items-center justify-center gap-4">
+              <div className="bg-white rounded-full p-3">
+                <img
+                  src="/images/truck.png"
+                  alt="Pengiriman Cepat"
+                  className="h-8 w-8"
+                />
+              </div>
+              <span className="font-semibold text-sm sm:text-base text-gray-800">
+                Pengiriman Cepat
+              </span>
+            </div>
+            <div className="flex items-center justify-center gap-4">
+              <div className="bg-white rounded-full p-3">
+                <img
+                  src="/images/ongkir.png"
+                  alt="Gratis Ongkir"
+                  className="h-8 w-8"
+                />
+              </div>
+              <span className="font-semibold text-sm sm:text-base text-gray-800">
+                Gratis Ongkir
+              </span>
+            </div>
+            <div className="flex items-center justify-center gap-4">
+              <div className="bg-white rounded-full p-3">
+                <img
+                  src="/images/pembayaran.png"
+                  alt="Pembayaran Aman"
+                  className="h-8 w-8"
+                />
+              </div>
+              <span className="font-semibold text-sm sm:text-base text-gray-800">
+                Pembayaran Aman
+              </span>
+            </div>
+            <div className="flex items-center justify-center gap-4">
+              <div className="bg-white rounded-full p-3">
+                <img
+                  src="/images/dijamin.png"
+                  alt="Dijamin 100% Ori"
+                  className="h-8 w-8"
+                />
+              </div>
+              <span className="font-semibold text-sm sm:text-base text-gray-800">
+                Dijamin 100% Ori
+              </span>
+            </div>
+          </div>
         </section>
 
-        {/* ============ Blog Section =========== */}
+
+        {/* ============ our services =========== */}
         <section id="blog" className="py-16 px-6 text-center">
-          <h2 className="text-2xl font-bold text-[#fdb739] mb-4">Blog</h2>
+          <h2 className="text-2xl font-bold text-[#fdb739] mb-4">
+            Our Services
+          </h2>
           <p className="text-gray-600">Artikel dan berita terbaru</p>
           <p className="text-sm text-gray-400 mt-2">
             (Card artikel blog placeholder)
