@@ -129,16 +129,26 @@ export default function Home() {
                     </div>
                   </div>
 
-                  {/* konten gambar */}
-                  <div className='lg:w-1/2'>
-                    <div className="rounded-lg overflow-hidden shadow-xl h-full">
-                      <Image
-                        src="/images/jaja_id.png"
-                        alt="JajaID"
-                        width={500}
-                        height={500}
-                        loading='lazy'
-                      />
+                  {/* misi */}
+                  <div className="flex-1 transition-all duration-500 ease-in-out transform hover:-translate-y-2">
+                    <div className="bg-yellow-400 text-white rounded-lg shadow-lg p-4 sm:p-8 space-y-11 h-full">
+                      <div>
+                        <p className='text-2xl text-bold mb-6'>
+                          Misi</p>
+                        <p className='text-xl text-bold mb-2'>
+                          Merangkul komunitas-komunitas tiap hobby yang ada di Indonesia</p>
+                        <p className="text-sm mt-4 mb-2">
+                          Misi kami adalah merangkul dan memberdayakan komunitas
+                          hobi di seluruh Indonesia dengan membangun ruang kolaboratif
+                          di mana setiap penggemar hobi dapat terhubung, berbagi, dan
+                          berkembang bersama.</p>
+                        <p className='text-xl text-bold mb-2'>
+                          Memenuhi semua kebutuhan hobby untuk semua kalangan</p>
+                        <p className="text-sm mt-4 mb-2">
+                          Misi kami adalah memenuhi seluruh kebutuhan hobi bagi semua
+                          kalangan, tanpa memandang usia, latar belakang, atau tingkat
+                          keahlian</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -150,22 +160,22 @@ export default function Home() {
         {/* ============ our services =========== */}
         <section id="prestasi" className="w-full flex flex-col md:flex-row" >
           <div className="flex-1 bg-gradient-to-r from-orange-500 to-yellow-400 p-10 flex flex-col items-center justify-center text-center">
-            <img src="/images/md.png" alt="Master Diskon" className="h-14 mb-4"/>
+            <img src="/images/md.png" alt="Master Diskon" className="h-14 mb-4" />
             <p className="text-lg text-gray-800">Kamu suka Travelling?</p>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Master Diskon Aja!
             </h2>
             <a href="https://masterdiskon.com/id-id" target="_blank" rel="noopener noreferrer" className="border border-gray-700 px-4 py-2 text-sm font-semibold hover:bg-gray-200 transition">
-            Cek Disini
+              Cek Disini
             </a>
           </div>
 
           <div className="flex-1 bg-gradient-to-r from-blue-800 to-blue-400 p-10 flex flex-col items-center justify-center text-center text-white">
-            <img src="/images/eurekabook.png" alt="Eureka Bookhouse"className="h-14 mb-4"/>
+            <img src="/images/eurekabook.png" alt="Eureka Bookhouse" className="h-14 mb-4" />
             <p className="text-lg">Mau cari buku? Yuk cek</p>
             <h2 className="text-2xl font-bold mb-4">Eureka Bookhouse</h2>
             <a href="https://eurekabookhouse.com/" target="_blank" rel="noopener noreferrer" className="border border-white px-4 py-2 text-sm font-semibold hover:bg-white hover:text-blue-700 transition">
-            Cek Disini
+              Cek Disini
             </a>
           </div>
         </section>
