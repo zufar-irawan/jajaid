@@ -7,26 +7,35 @@ export default function Home() {
       <Header />
 
       <main className="pt-24">
-        {/* Hero Section */}
-        <section className="relative w-full h-screen">
-          <img
-            src="/logo.png"
-            alt="SMK Prestasi Prima"
-            className="w-full h-full objectcover"
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-          <div className="absolute inset-0 flex flex-col justify-center items-start px-6 md:px-20 text-white z-10">
-            <h3 className="text-sm uppercase tracking-wide">Selamat datang di situs resmi</h3>
-            <h1 className="text-5xl font-extrabold text-orange-400 my-4">SMK Prestasi Prima</h1>
-            <p className="max-w-xl mb-6">
-              Sekolah unggulan berbasis teknologi dan karakter.
+        
+        <section
+          className="relative w-full h-screen bg-cover bg-center flex items-center justify-center text-center"
+          style={{backgroundImage: "url('/Banner2.jpeg')"}}
+        >
+          <div className="absolute inset-0 bg-black bg-opacity-30 z-0"></div>
+
+          <div className="relative z-10 text-white px-4">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+              JAJA ID
+            </h1>
+            <p className="text-md md:text-lg mb-6">
+              Company Profile Theme Company Profile Theme
             </p>
-            <a
-              href="#profil"
-              className="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded text-white font-semibold"
-            >
-              Lihat Profil →
-            </a>
+
+            <div className="flex flex-col md:flex-row justify-center gap-4">
+              <a
+                href="#"
+                className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-500 transition"
+              >
+                READ MORE
+              </a>
+              <a
+                href="#"
+                className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition"
+              >
+                OUR WORK
+              </a>
+            </div>
           </div>
         </section>
 
