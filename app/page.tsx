@@ -1,5 +1,6 @@
 import Header from '@/component/header'
-import Footer from '@/component/Footer';
+import Footer from '@/component/Footer'
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -22,19 +23,19 @@ export default function Home() {
               JAJA ID
             </h1>
             <p className="text-md md:text-lg mb-6">
-              Company Profile Theme Company Profile Theme
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
 
             <div className="flex flex-col md:flex-row justify-center gap-4">
               <a
                 href="#"
-                className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-500 transition"
+                className="bg-yellow-400 shadow-lg text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-500 transition"
               >
                 READ MORE
               </a>
               <a
                 href="#"
-                className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition"
+                className="bg-blue-600 shadow-lg text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition"
               >
                 OUR WORK
               </a>
@@ -44,20 +45,40 @@ export default function Home() {
 
         {/* Profil Section */}
         <section id="profil" className="py-16 px-6 md:px-20 bg-white">
-          <h2 className="text-3xl font-bold text-center text-orange-500 mb-10">Profil SMK Prestasi Prima</h2>
-          <div className="flex flex-col md:flex-row gap-10 items-center">
-            <div className="md:w-1/2">
-              <h3 className="font-bold text-lg mb-2">Visi</h3>
-              <p>Mewujudkan lulusan berakhlak mulia dan siap kerja.</p>
-              <h3 className="font-bold text-lg mt-4 mb-2">Misi</h3>
-              <ul className="list-disc pl-5">
-                <li>Meningkatkan kualitas pendidikan</li>
-                <li>Menanamkan nilai karakter</li>
-                <li>Menjalin kemitraan industri</li>
-              </ul>
+          <div className="py-28">
+            <div className="container mx-auto px-4">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl font-bold text-center text-blue-400 mb-16">Tentang Kami</h2>
+              </div>
             </div>
-            <div className="md:w-1/2">
-              <img src="/building.jpg" alt="Gedung SMK" className="rounded-lg shadow" />
+
+            <div className="container mx-auto px-4">
+              <div className="max-w-7xl mx-auto">
+                <div className="flex flex-col lg:flex-row gap-12 items-stretch">
+                  {/* konten teks */}
+                  <div className="flex">
+                    <div className="bg-white rounded-lg shadow-lg p-4 sm:p-8 space-y-11 h-full">
+                      <div>
+                        <p>Jaja.id merupakan salah satu Marketplace pertama Khusus Hobby di Indonesia yang menyediakan fasilitas jual-beli dari konsumen ke konsumen. Semua orang dapat membuka toko online di Jaja.id dan melayani pembeli dari seluruh Indonesia untuk membantu memenuhi kebutuhan hobby masyarakat Indonesia.</p>
+                        <p className="mt-4 mb-2">Jaja memiliki slogan 1st Marketplace For your Hobbies karena Jaja.id merupakan marketplace pertama khusus hobby di Indonesia.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* konten gambar */}
+                  <div className='lg:w-1/2'>
+                    <div className="rounded-lg overflow-hidden shadow-xl h-full">
+                      <Image
+                        src="/images/jaja_id.png"
+                        alt="JajaID"
+                        width={500}
+                        height={500}
+                        loading='lazy'
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
