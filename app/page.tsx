@@ -7,15 +7,15 @@ export default function Home() {
       <Header />
 
       <main className="pt-24">
-        
-          <section
-              className="relative w-full h-screen flex items-center justify-center text-center"
-              style={{
-                background: "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/Banner2.jpeg')",
-                backgroundSize: "cover",
-                backgroundPosition: "center"
-              }}
-            >
+
+        <section
+          className="relative w-full h-screen flex items-center justify-center text-center"
+          style={{
+            background: "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/Banner2.jpeg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center"
+          }}
+        >
 
           <div className="relative z-10 text-white px-4">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
@@ -38,7 +38,7 @@ export default function Home() {
               >
                 OUR WORK
               </a>
-            </div> 
+            </div>
           </div>
         </section>
 
