@@ -42,7 +42,10 @@ const Header = () => {
         <ul className="flex gap-6 font-medium text-gray-700">
           <li className="hover:text-blue-500 transition"><Link href={"#beranda"}>Beranda</Link></li>
           <li className="hover:text-blue-500 transition"><Link href={"#tentang"}>Tentang</Link></li>
-          <li className="hover:text-blue-500 transition"><Link href={"#visiMisi"}>Visi&Misi</Link></li>
+          <li className="hover:text-blue-500 transition"><Link href={"#visiMisi"}>Visi & Misi</Link></li>
+          <li className="hover:text-blue-500 transition"><Link href={"#product"}>Products</Link></li>
+          <li className="hover:text-blue-500 transition"><Link href={"#mitra"}>Industri</Link></li>
+          <li className="hover:text-blue-500 transition"><Link href={"#layanan"}>Service</Link></li>
         </ul>
       </div>
 
