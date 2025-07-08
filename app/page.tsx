@@ -53,7 +53,7 @@ export default function Home() {
               <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col lg:flex-row gap-12 items-stretch">
                   {/* konten teks */}
-                  <div className="flex">
+                  <div className="flex transition-all duration-500 ease-in-out transform hover:-translate-y-2">
                     <div className="bg-white rounded-lg shadow-lg p-4 sm:p-8 space-y-11 h-full">
                       <div>
                         <p>
@@ -70,7 +70,7 @@ export default function Home() {
                   </div>
 
                   {/* konten gambar */}
-                  <div className='lg:w-1/2'>
+                  <div className='lg:w-1/2 transition-all duration-500 ease-in-out transform hover:-translate-y-2'>
                     <div className="rounded-lg overflow-hidden shadow-xl h-full">
                       <Image
                         src="/images/jaja_id.png"
@@ -97,31 +97,49 @@ export default function Home() {
             </div>
 
             <div className="container mx-auto px-4">
-              <div className="max-w-7xl mx-auto">
-                <div className="flex flex-col lg:flex-row gap-12 items-stretch">
-                  {/* konten teks */}
-                  <div className="flex">
-                    <div className="bg-yellow-500 text-white rounded-lg shadow-lg p-4 sm:p-8 space-y-11 h-full">
+              <div className="mx-auto">
+                <div className="flex lg:flex-row gap-10">
+                  {/* visi */}
+                  <div className="flex-1 transition-all duration-500 ease-in-out transform hover:-translate-y-2">
+                    <div className="bg-yellow-400 text-white rounded-lg shadow-lg p-4 sm:p-8 space-y-11 h-full">
                       <div>
-                        <p className='mb-2'>
-                          Menjadi Marketplace Khusus Hobby Terbesar di Indoonesia</p>
-                        <p className="mt-4 mb-2">
-                          Jaja memiliki slogan 1st Marketplace For your Hobbies karena Jaja.id
-                          merupakan marketplace pertama khusus hobby di Indonesia.</p>
+                        <p className='text-2xl text-right text-bold mb-6'>
+                          Visi</p>
+                        <p className='text-xl text-bold text-right mb-2'>
+                          Menjadi Marketplace Khusus Hobby Terbesar di Indonesia</p>
+                        <p className="text-sm mt-4 text-right mb-2">
+                          Visi kami adalah menjadi marketplace khusus hobi terbesar dan
+                          terpercaya di Indonesia dengan menghadirkan platform yang
+                          menghubungkan para pecinta hobi dari seluruh penjuru negeri.
+                          Kami berkomitmen untuk menyediakan ekosistem yang lengkap, aman,
+                          dan inspiratif bagi komunitas hobi—mulai dari koleksi, peralatan,
+                          hingga layanan pendukung—sekaligus mendorong pertumbuhan ekonomi
+                          kreatif dan memberdayakan pelaku usaha lokal di berbagai bidang
+                          hobi.</p>
                       </div>
                     </div>
                   </div>
 
-                  {/* konten gambar */}
-                  <div className='lg:w-1/2'>
-                    <div className="rounded-lg overflow-hidden shadow-xl h-full">
-                      <Image
-                        src="/images/jaja_id.png"
-                        alt="JajaID"
-                        width={500}
-                        height={500}
-                        loading='lazy'
-                      />
+                  {/* misi */}
+                  <div className="flex-1 transition-all duration-500 ease-in-out transform hover:-translate-y-2">
+                    <div className="bg-yellow-400 text-white rounded-lg shadow-lg p-4 sm:p-8 space-y-11 h-full">
+                      <div>
+                        <p className='text-2xl text-bold mb-6'>
+                          Misi</p>
+                        <p className='text-xl text-bold mb-2'>
+                          Merangkul komunitas-komunitas tiap hobby yang ada di Indonesia</p>
+                        <p className="text-sm mt-4 mb-2">
+                          Misi kami adalah merangkul dan memberdayakan komunitas
+                          hobi di seluruh Indonesia dengan membangun ruang kolaboratif
+                          di mana setiap penggemar hobi dapat terhubung, berbagi, dan
+                          berkembang bersama.</p>
+                        <p className='text-xl text-bold mb-2'>
+                          Memenuhi semua kebutuhan hobby untuk semua kalangan</p>
+                        <p className="text-sm mt-4 mb-2">
+                          Misi kami adalah memenuhi seluruh kebutuhan hobi bagi semua
+                          kalangan, tanpa memandang usia, latar belakang, atau tingkat
+                          keahlian</p>
+                      </div>
                     </div>
                   </div>
                 </div>
