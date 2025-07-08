@@ -2,14 +2,21 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"; 
 
 const Header = () => {
 
     return (
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold text-blue-600">
-            Jaja ID
+        <Link href="/">
+            <img
+            src="/logo.png"
+            alt="Jaja ID Logo"
+            width={120}
+            height={40}
+          />
+
         </Link>
 
         <nav className="hidden md:flex space-x-6">
