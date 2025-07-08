@@ -2,21 +2,23 @@ import Header from "@/component/header";
 import Footer from "@/component/Footer";
 import Slider from 'react-slick'
 import Image from 'next/image';
+import BannerCarousel from '@/component/BannerCarousel';
 
 export default function Home() {
   return (
     <>
       <Header />
 
-      <main className="pt-20">
-        {/* ============ Beranda Section =========== */}
-        <section
-          className="relative w-full h-screen flex items-center justify-center text-center"
-          style={{
-            background: "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/Banner2.jpeg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center"
-          }}>
+      <main className="pt-24">
+        <BannerCarousel />
+          <section
+              className="relative w-full h-screen flex items-center justify-center text-center"
+              style={{
+                background: "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/Banner2.jpeg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center"
+              }}
+            >
 
           <div className="relative z-10 text-white px-4">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
