@@ -14,12 +14,12 @@ export default function Home() {
         <section
           className="relative w-full h-screen flex items-center justify-center text-center"
           style={{
-            background: "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/Banner2.jpeg')",
+            background:
+              "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/Banner2.jpeg')",
             backgroundSize: "cover",
-            backgroundPosition: "center"
+            backgroundPosition: "center",
           }}
         >
-
           <div className="relative z-10 text-white px-4">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">JAJA ID</h1>
             <p className="text-xl mb-6">1st Marketplace For your Hobbies</p>
@@ -42,7 +42,10 @@ export default function Home() {
         </section>
 
         {/* ============ Tentang Section =========== */}
-        <section id="tentang" className="min-h-screen py-auto px-6 md:px-20 bg-white">
+        <section
+          id="tentang"
+          className="min-h-screen py-auto px-6 md:px-20 bg-white"
+        >
           <div className="py-28">
             <div className="container mx-auto px-4">
               <div className="text-center mb-16">
@@ -77,7 +80,7 @@ export default function Home() {
                   </div>
 
                   {/* konten gambar */}
-                  <div className='lg:w-1/2'>
+                  <div className="lg:w-1/2">
                     <div className="rounded-lg overflow-hidden shadow-xl h-full">
                       <Image
                         src="/images/jaja_id.png"
@@ -112,32 +115,37 @@ export default function Home() {
                   <div className="flex-1 transition-all duration-500 ease-in-out transform hover:-translate-y-2">
                     <div className="bg-yellow-400 text-white rounded-lg shadow-lg p-4 sm:p-8 space-y-11 h-full">
                       <div>
-                        <p className='text-2xl text-right text-bold mb-6'>
-                          Visi</p>
-                        <p className='text-xl text-bold text-right mb-2'>
-                          Menjadi Marketplace Khusus Hobby Terbesar di Indonesia</p>
+                        <p className="text-2xl text-right text-bold mb-6">
+                          Visi
+                        </p>
+                        <p className="text-xl text-bold text-right mb-2">
+                          Menjadi Marketplace Khusus Hobby Terbesar di Indonesia
+                        </p>
                         <p className="text-sm mt-4 text-right mb-2">
-                          Visi kami adalah menjadi marketplace khusus hobi terbesar dan
-                          terpercaya di Indonesia dengan menghadirkan platform yang
-                          menghubungkan para pecinta hobi dari seluruh penjuru negeri.
-                          Kami berkomitmen untuk menyediakan ekosistem yang lengkap, aman,
-                          dan inspiratif bagi komunitas hobi—mulai dari koleksi, peralatan,
-                          hingga layanan pendukung—sekaligus mendorong pertumbuhan ekonomi
-                          kreatif dan memberdayakan pelaku usaha lokal di berbagai bidang
-                          hobi.</p>
+                          Visi kami adalah menjadi marketplace khusus hobi
+                          terbesar dan terpercaya di Indonesia dengan
+                          menghadirkan platform yang menghubungkan para pecinta
+                          hobi dari seluruh penjuru negeri. Kami berkomitmen
+                          untuk menyediakan ekosistem yang lengkap, aman, dan
+                          inspiratif bagi komunitas hobi—mulai dari koleksi,
+                          peralatan, hingga layanan pendukung—sekaligus
+                          mendorong pertumbuhan ekonomi kreatif dan
+                          memberdayakan pelaku usaha lokal di berbagai bidang
+                          hobi.
+                        </p>
                       </div>
                     </div>
                   </div>
 
                   {/* konten gambar */}
-                  <div className='lg:w-1/2'>
+                  <div className="lg:w-1/2">
                     <div className="rounded-lg overflow-hidden shadow-xl h-full">
                       <Image
                         src="/images/jaja_id.png"
                         alt="JajaID"
                         width={500}
                         height={500}
-                        loading='lazy'
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -148,25 +156,49 @@ export default function Home() {
         </section>
 
         {/* ============ our services =========== */}
-        <section id="prestasi" className="w-full flex flex-col md:flex-row" >
-          <div className="flex-1 bg-gradient-to-r from-orange-500 to-yellow-400 p-10 flex flex-col items-center justify-center text-center">
-            <img src="/images/md.png" alt="Master Diskon" className="h-14 mb-4"/>
-            <p className="text-lg text-gray-800">Kamu suka Travelling?</p>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Master Diskon Aja!
-            </h2>
-            <a href="https://masterdiskon.com/id-id" target="_blank" rel="noopener noreferrer" className="border border-gray-700 px-4 py-2 text-sm font-semibold hover:bg-gray-200 transition">
-            Cek Disini
-            </a>
+        <section className="relative w-full h-auto text-white">
+          <div className="absolute inset-0 z-0 flex">
+            {/* Oranye kiri */}
+            <div className="w-1/2 bg-orange-400 clip-left" />
+            {/* Biru kanan */}
+            <div className="w-1/2 bg-blue-500 clip-right" />
           </div>
 
-          <div className="flex-1 bg-gradient-to-r from-blue-800 to-blue-400 p-10 flex flex-col items-center justify-center text-center text-white">
-            <img src="/images/eurekabook.png" alt="Eureka Bookhouse"className="h-14 mb-4"/>
-            <p className="text-lg">Mau cari buku? Yuk cek</p>
-            <h2 className="text-2xl font-bold mb-4">Eureka Bookhouse</h2>
-            <a href="https://eurekabookhouse.com/" target="_blank" rel="noopener noreferrer" className="border border-white px-4 py-2 text-sm font-semibold hover:bg-white hover:text-blue-700 transition">
-            Cek Disini
-            </a>
+          {/* Konten */}
+          <div className="relative z-10 flex flex-col md:flex-row text-center md:text-left">
+            <div className="flex-1 p-10 flex flex-col items-center justify-center text-gray-900">
+              <img
+                src="/images/md.png"
+                alt="Master Diskon"
+                className="h-14 mb-4"/>
+              <p className="text-lg">Kamu suka Travelling?</p>
+              <h2 className="text-2xl font-bold mb-4">Master Diskon Aja!</h2>
+              <a
+                href="https://masterdiskon.com/id-id"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-gray-800 px-4 py-2 text-sm font-semibold hover:bg-gray-100 transition">
+                Cek Disini
+              </a>
+            </div>
+
+            <div className="flex-1 p-10 flex flex-col items-center justify-center text-white">
+              <img
+                src="/images/eurekabook.png"
+                alt="Eureka Bookhouse"
+                className="h-14 mb-4"
+              />
+              <p className="text-lg">Mau cari buku? Yuk cek</p>
+              <h2 className="text-2xl font-bold mb-4">Eureka Bookhouse</h2>
+              <a
+                href="https://eurekabookhouse.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-white px-4 py-2 text-sm font-semibold hover:bg-white hover:text-blue-700 transition"
+              >
+                Cek Disini
+              </a>
+            </div>
           </div>
         </section>
 
@@ -357,7 +389,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
 
         {/* ============ our services =========== */}
         <section id="blog" className="py-16 px-6 text-center">
