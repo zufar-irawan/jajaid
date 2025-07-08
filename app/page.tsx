@@ -129,26 +129,6 @@ export default function Home() {
                           kalangan, tanpa memandang usia, latar belakang, atau tingkat
                           keahlian</p>
                       </div>
-                  {/* misi */}
-                  <div className="flex-1 transition-all duration-500 ease-in-out transform hover:-translate-y-2">
-                    <div className="bg-yellow-400 text-white rounded-lg shadow-lg p-4 sm:p-8 space-y-11 h-full">
-                      <div>
-                        <p className='text-2xl text-bold mb-6'>
-                          Misi</p>
-                        <p className='text-xl text-bold mb-2'>
-                          Merangkul komunitas-komunitas tiap hobby yang ada di Indonesia</p>
-                        <p className="text-sm mt-4 mb-2">
-                          Misi kami adalah merangkul dan memberdayakan komunitas
-                          hobi di seluruh Indonesia dengan membangun ruang kolaboratif
-                          di mana setiap penggemar hobi dapat terhubung, berbagi, dan
-                          berkembang bersama.</p>
-                        <p className='text-xl text-bold mb-2'>
-                          Memenuhi semua kebutuhan hobby untuk semua kalangan</p>
-                        <p className="text-sm mt-4 mb-2">
-                          Misi kami adalah memenuhi seluruh kebutuhan hobi bagi semua
-                          kalangan, tanpa memandang usia, latar belakang, atau tingkat
-                          keahlian</p>
-                      </div>
                     </div>
                   </div>
                 </div>
