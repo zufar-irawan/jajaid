@@ -51,9 +51,9 @@ export default function Footer() {
         <div className="mt-16 text-center">
           <h3 className="text-lg font-semibold uppercase mb-4">Sosial Media</h3>
           <div className="flex justify-center gap-4 mb-8">
-            <Link href="#"><Image src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width={32} height={32} /></Link>
-            <Link href="#"><Image src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width={32} height={32} /></Link>
-            <Link href="#"><Image src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width={32} height={32} /></Link>
+            <Link href="https://api.whatsapp.com/send?phone=6287888337555"><Image src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width={32} height={32} /></Link>
+            <Link href="https://web.facebook.com/jajaidofficial"><Image src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width={32} height={32} /></Link>
+            <Link href="https://www.instagram.com/jajaid.official/"><Image src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width={32} height={32} /></Link>
             <Link href="#"><Image src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok" width={32} height={32} /></Link>
           </div>
 
