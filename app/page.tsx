@@ -1,5 +1,6 @@
 import Header from '@/component/header'
 import Footer from '@/component/Footer';
+import BannerCarousel from '@/component/BannerCarousel';
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       <Header />
 
       <main className="pt-24">
-        
+        <BannerCarousel />
           <section
               className="relative w-full h-screen flex items-center justify-center text-center"
               style={{
