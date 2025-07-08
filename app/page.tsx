@@ -11,40 +11,9 @@ export default function Home() {
 
       <main className="pt-24">
         <BannerCarousel />
-          <section
-              className="relative w-full h-screen flex items-center justify-center text-center"
-              style={{
-                background: "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/Banner2.jpeg')",
-                backgroundSize: "cover",
-                backgroundPosition: "center"
-              }}
-            >
-
-          <div className="relative z-10 text-white px-4">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              JAJA ID
-            </h1>
-            <p className="text-xl mb-6">
-              1st Marketplace For your Hobbies
-            </p>
-
-            <div className="flex flex-col md:flex-row justify-center gap-4">
-              <a
-                href="#"
-                className="bg-yellow-400 shadow-lg text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-500 transition">
-                Read More
-              </a>
-              <a
-                href="#"
-                className="bg-blue-600 shadow-lg text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition">
-                Our Store
-              </a>
-            </div>
-          </div>
-        </section>
 
         {/* ============ Tentang Section =========== */}
-        <section id="tentang" className="py-auto px-6 md:px-20 bg-white">
+        <section id="tentang" className="py-20 px-6 md:px-20 bg-white">
           <div className="py-28">
             <div className="container mx-auto px-4">
               <div className="text-center mb-16">
@@ -91,7 +60,7 @@ export default function Home() {
         </section>
 
         {/* ============ Visi & Misi Section =========== */}
-        <section id="visiMisi" className="py-auto px-6 md:px-20 bg-yellow-500">
+        <section id="visiMisi" className="py-20 px-6 md:px-20 bg-yellow-500">
           <div className="py-28">
             <div className="container mx-auto px-4">
               <div className="text-center mb-16">
@@ -294,7 +263,7 @@ export default function Home() {
             (Card artikel blog placeholder)
           </p>
         </section>
-      </main>
+        </main>
 
       <Footer />
     </>
