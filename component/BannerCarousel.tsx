@@ -23,7 +23,11 @@ const BannerCarousel = () => {
     pauseOnHover: false,
   };
 
-  const banners = ["/Banner1.jpeg", "/Banner2.jpeg", "/Banner3.jpeg"];
+  const banners = [
+    '/Banner1.jpeg',
+    '/Banner2.jpeg',
+    '/Banner3.jpeg'
+  ];
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
@@ -34,8 +38,8 @@ const BannerCarousel = () => {
               className="w-full h-screen bg-cover bg-center"
               style={{
                 backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${banner})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
               }}
             ></div>
           </div>

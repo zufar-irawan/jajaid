@@ -15,85 +15,114 @@ export default function Home() {
       <main className="pt-24 font-sans bg-white">
         <div id="beranda">
         <BannerCarousel />
-        </div>
 
-        {/* Tentang Kami */}
-        <section id="tentang" className="py-24 bg-[#f5f5f5]">
-          <div className="container mx-auto px-4">
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-4xl font-bold text-primary text-center mb-12"
-            >
-              Tentang Kami
-            </motion.h2>
+        {/* ============ Tentang Section =========== */}
+        <section id="tentang" className="py-20 px-6 md:px-20 bg-white">
+          <div className="py-28">
+            <div className="container mx-auto px-4">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl font-bold text-center text-blue-400 mb-16">
+                  Tentang Kami
+                </h2>
+              </div>
+            </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -40 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-                className="text-gray-700 space-y-6 text-lg"
-              >
-                <p>
-                  Jaja.id merupakan salah satu marketplace pertama khusus hobby di
-                  Indonesia. Semua orang dapat membuka toko online dan menjangkau
-                  pembeli dari seluruh Indonesia untuk memenuhi kebutuhan hobby.
-                </p>
-                <p>
-                  Slogan kami "1st Marketplace For Your Hobbies" menunjukkan komitmen
-                  kami membangun komunitas hobby terbesar.
-                </p>
-              </motion.div>
+            <div className="container mx-auto px-4">
+              <div className="max-w-7xl mx-auto">
+                <div className="flex flex-col lg:flex-row gap-12 items-stretch">
+                  {/* konten teks */}
+                  <div className="flex transition-all duration-500 ease-in-out transform hover:-translate-y-2">
+                    <div className="bg-white rounded-lg shadow-lg p-4 sm:p-8 space-y-11 h-full">
+                      <div>
+                        <p>
+                          Jaja.id merupakan salah satu Marketplace pertama
+                          Khusus Hobby di Indonesia yang menyediakan fasilitas
+                          jual-beli dari konsumen ke konsumen. Semua orang dapat
+                          membuka toko online di Jaja.id dan melayani pembeli
+                          dari seluruh Indonesia untuk membantu memenuhi
+                          kebutuhan hobby masyarakat Indonesia.
+                        </p>
+                        <p className="mt-4 mb-2">
+                          Jaja memiliki slogan 1st Marketplace For your Hobbies
+                          karena Jaja.id merupakan marketplace pertama khusus
+                          hobby di Indonesia.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-              <motion.div
-                initial={{ opacity: 0, x: 40 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-              >
-                <Image
-                  src="/images/jaja_id.png"
-                  alt="Tentang Kami"
-                  width={500}
-                  height={500}
-                  className="rounded-xl shadow-xl"
-                />
-              </motion.div>
+                  {/* konten gambar */}
+                  <div className="lg:w-1/2">
+                    <div className="rounded-lg overflow-hidden shadow-xl h-full">
+                      <Image
+                        src="/images/jaja_id.png"
+                        alt="JajaID"
+                        width={500}
+                        height={500}
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Visi & Misi */}
-        <section id="visi-misi" className="py-24 bg-primary text-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-16">Visi & Misi</h2>
-            <div className="grid md:grid-cols-2 gap-12">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="bg-[#f4a100] rounded-lg p-8 shadow-md"
-              >
-                <h3 className="text-2xl font-bold mb-4">Visi</h3>
-                <p className="text-base">
-                  Menjadi marketplace hobi terbesar dan terpercaya di Indonesia dengan
-                  platform aman, lengkap, dan menginspirasi bagi komunitas hobi.
-                </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-[#f4a100] rounded-lg p-8 shadow-md"
-              >
-                <h3 className="text-2xl font-bold mb-4">Misi</h3>
-                <ul className="list-disc list-inside space-y-2">
-                  <li>Merangkul komunitas hobi di seluruh Indonesia.</li>
-                  <li>Memenuhi kebutuhan hobi semua kalangan.</li>
-                  <li>Memberdayakan pelaku usaha kreatif.</li>
-                </ul>
-              </motion.div>
+        {/* ============ Visi & Misi Section =========== */}
+        <section id="visiMisi" className="py-20 px-6 md:px-20 bg-yellow-500">
+          <div className="py-28">
+            <div className="container mx-auto px-4">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl font-bold text-center text-white mb-16">
+                  Visi & Misi
+                </h2>
+              </div>
+            </div>
+
+            <div className="container mx-auto px-4">
+              <div className="mx-auto">
+                <div className="flex lg:flex-row gap-10">
+                  {/* visi */}
+                  <div className="flex-1 transition-all duration-500 ease-in-out transform hover:-translate-y-2">
+                    <div className="bg-yellow-400 text-white rounded-lg shadow-lg p-4 sm:p-8 space-y-11 h-full">
+                      <div>
+                        <p className="text-2xl text-right text-bold mb-6">
+                          Visi
+                        </p>
+                        <p className="text-xl text-bold text-right mb-2">
+                          Menjadi Marketplace Khusus Hobby Terbesar di Indonesia
+                        </p>
+                        <p className="text-sm mt-4 text-right mb-2">
+                          Visi kami adalah menjadi marketplace khusus hobi
+                          terbesar dan terpercaya di Indonesia dengan
+                          menghadirkan platform yang menghubungkan para pecinta
+                          hobi dari seluruh penjuru negeri. Kami berkomitmen
+                          untuk menyediakan ekosistem yang lengkap, aman, dan
+                          inspiratif bagi komunitas hobi—mulai dari koleksi,
+                          peralatan, hingga layanan pendukung—sekaligus
+                          mendorong pertumbuhan ekonomi kreatif dan
+                          memberdayakan pelaku usaha lokal di berbagai bidang
+                          hobi.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* konten gambar */}
+                  <div className='lg:w-1/2'>
+                    <div className="rounded-lg overflow-hidden shadow-xl h-full">
+                      <Image
+                        src="/images/jaja_id.png"
+                        alt="JajaID"
+                        width={500}
+                        height={500}
+                        loading='lazy'
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -233,7 +262,18 @@ export default function Home() {
             ))}
           </div>
         </section>
-      </main>
+
+        {/* ============ our services =========== */}
+        <section id="blog" className="py-16 px-6 text-center">
+          <h2 className="text-2xl font-bold text-[#fdb739] mb-4">
+            Our Services
+          </h2>
+          <p className="text-gray-600">Artikel dan berita terbaru</p>
+          <p className="text-sm text-gray-400 mt-2">
+            (Card artikel blog placeholder)
+          </p>
+        </section>
+        </main>
 
       <Footer />
     </>
