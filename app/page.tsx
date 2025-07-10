@@ -1,15 +1,19 @@
+"use client";
 import Header from "@/component/header";
 import Footer from "@/component/Footer";
-import Slider from "react-slick";
-import Image from "next/image";
 import BannerCarousel from "@/component/BannerCarousel";
+import * as framerMotion from "framer-motion";
+import Image from "next/image";
+
+const motion = framerMotion.motion;
 
 export default function Home() {
   return (
     <>
       <Header />
 
-      <main className="pt-24">
+      <main className="pt-24 font-sans bg-white">
+        <div id="beranda">
         <BannerCarousel />
 
         {/* ============ Tentang Section =========== */}
@@ -123,238 +127,139 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ============ our services =========== */}
-        <section className="relative w-full h-auto text-white">
+        {/* Our Services */}
+        <section id="our-services" className="relative w-full text-white py-20 overflow-hidden">
           <div className="absolute inset-0 z-0 flex">
-            {/* Oranye kiri */}
-            <div className="w-1/2 bg-orange-400 clip-left" />
-            {/* Biru kanan */}
-            <div className="w-1/2 bg-blue-500 clip-right" />
+            <div className="w-1/2 bg-orange-400 clip-left-services" />
+            <div className="w-1/2 bg-blue-500 clip-right-services" />
           </div>
 
-          {/* Konten */}
-          <div className="relative z-10 flex flex-col md:flex-row text-center md:text-left">
-            <div className="flex-1 p-10 flex flex-col items-center justify-center text-gray-900">
-              <img
-                src="/images/md.png"
-                alt="Master Diskon"
-                className="h-14 mb-4" />
+          <div className="relative z-10 container mx-auto px-6 grid md:grid-cols-2 gap-12">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="bg-white text-gray-900 p-8 rounded-xl shadow-lg flex flex-col items-center text-center"
+            >
+              <img src="/images/md.png" alt="Master Diskon" className="h-14 mb-4" />
               <p className="text-lg">Kamu suka Travelling?</p>
               <h2 className="text-2xl font-bold mb-4">Master Diskon Aja!</h2>
               <a
                 href="https://masterdiskon.com/id-id"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border border-gray-800 px-4 py-2 text-sm font-semibold hover:bg-gray-100 transition">
+                className="mt-4 bg-gray-900 text-white px-6 py-2 rounded-full hover:bg-gray-800 transition"
+              >
                 Cek Disini
               </a>
-            </div>
+            </motion.div>
 
-            <div className="flex-1 p-10 flex flex-col items-center justify-center text-white">
-              <img
-                src="/images/eurekabook.png"
-                alt="Eureka Bookhouse"
-                className="h-14 mb-4"
-              />
-              <p className="text-lg">Mau cari buku? Yuk cek</p>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-blue-500 text-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center"
+            >
+              <img src="/images/eurekabook.png" alt="Eureka Bookhouse" className="h-14 mb-4" />
+              <p className="text-lg">Mau cari buku? Yuk cek buruan</p>
               <h2 className="text-2xl font-bold mb-4">Eureka Bookhouse</h2>
               <a
                 href="https://eurekabookhouse.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border border-white px-4 py-2 text-sm font-semibold hover:bg-white hover:text-blue-700 transition"
+                className="mt-4 border border-white px-6 py-2 rounded-full hover:bg-white hover:text-blue-700 transition"
               >
                 Cek Disini
               </a>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Our Products */}
+        <section
+          id="our-products"
+          className="py-24 bg-gray-100 text-center text-gray-900"
+        >
+          <div className="container mx-auto px-4">
+            <h2 className="text-4xl font-bold text-primary mb-12">
+              Our Products
+            </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8">
+              {[
+                "ultrav", "vougame", "art", "book", "cook", "digital",
+                "game", "garden", "kpop", "musik", "pets", "toys",
+              ].map((name, i) => (
+                <motion.div
+                  key={name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: i * 0.05 }}
+                  className="flex flex-col items-center"
+                >
+                  <Image
+                    src={`/images/${name}.png`}
+                    alt={name}
+                    width={64}
+                    height={64}
+                    className="rounded-full bg-white p-2 shadow"
+                  />
+                  <p className="mt-2 text-sm capitalize">{name}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* ============ our products =========== */}
-        <section id="product" className="py-16 px-6 md:px-20 bg-gray-900 text-white text-center">
-          <h2 className="text-2xl font-bold text-[#fdb739] mb-6">
-            Our Products
-          </h2>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-y-10 gap-x-6 justify-items-center">
-            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
-              <img
-                src="/images/ultrav.png"
-                alt="Ultra Voucher"
-                className="w-14 h-14 rounded-full bg-white p-2"
-              />
-              <p className="mt-2 text-sm">Ultra Voucher</p>
-            </div>
-            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
-              <img
-                src="/images/vougame.png"
-                alt="Vouchers Game"
-                className="w-14 h-14 rounded-full bg-white p-2"
-              />
-              <p className="mt-2 text-sm text-center">Vouchers Game</p>
-            </div>
-            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
-              <img
-                src="/images/art.png"
-                alt="Art Shop"
-                className="w-14 h-14 rounded-full bg-white p-2"
-              />
-              <p className="mt-2 text-sm">Art Shop</p>
-            </div>
-            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
-              <img
-                src="/images/book.png"
-                alt="Books"
-                className="w-14 h-14 rounded-full bg-white p-2"
-              />
-              <p className="mt-2 text-sm">Books</p>
-            </div>
-            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
-              <img
-                src="/images/cook.png"
-                alt="Cooking"
-                className="w-14 h-14 rounded-full bg-white p-2"
-              />
-              <p className="mt-2 text-sm text-center">Cooking & Coffee</p>
-            </div>
-            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
-              <img
-                src="/images/digital.png"
-                alt="Digital"
-                className="w-14 h-14 rounded-full bg-white p-2"
-              />
-              <p className="mt-2 text-sm">Digital</p>
-            </div>
-            {/* Tambahkan item lain di bawah ini */}
-            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
-              <img
-                src="/images/game.png"
-                alt="Games"
-                className="w-14 h-14 rounded-full bg-white p-2"
-              />
-              <p className="mt-2 text-sm">Games</p>
-            </div>
-            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
-              <img
-                src="/images/garden.png"
-                alt="Gardening"
-                className="w-14 h-14 rounded-full bg-white p-2"
-              />
-              <p className="mt-2 text-sm">Gardening</p>
-            </div>
-            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
-              <img
-                src="/images/kpop.png"
-                alt="K-POP"
-                className="w-14 h-14 rounded-full bg-white p-2"
-              />
-              <p className="mt-2 text-sm">K-POP</p>
-            </div>
-            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
-              <img
-                src="/images/musik.png"
-                alt="Musics"
-                className="w-14 h-14 rounded-full bg-white p-2"
-              />
-              <p className="mt-2 text-sm">Musics</p>
-            </div>
-            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
-              <img
-                src="/images/pets.png"
-                alt="Pets"
-                className="w-14 h-14 rounded-full bg-white p-2"
-              />
-              <p className="mt-2 text-sm">Pets</p>
-            </div>
-            <div className="flex flex-col items-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
-              <img
-                src="/images/toys.png"
-                alt="Toys"
-                className="w-14 h-14 rounded-full bg-white p-2"
-              />
-              <p className="mt-2 text-sm">Toys</p>
+        {/* Mitra Industri */}
+        <section id="mitra" className="py-24 bg-gray-900 text-center">
+          <div className="container mx-auto px-4">
+            <h2 className="text-4xl font-bold text-[#fdb739] mb-12">
+              Mitra Industri
+            </h2>
+            <div className="flex justify-center gap-10 items-center flex-wrap">
+              {["ebh", "logo", "jajato", "katarasa", "rajacepat", "eurekalogs", "masterdis"].map((logo, i) => (
+                <motion.img
+                  key={logo}
+                  src={`/images/${logo}.png`}
+                  alt={logo}
+                  className="h-12"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: i * 0.05 }}
+                />
+              ))}
             </div>
           </div>
         </section>
 
-        {/* Mitra Industri section */}
-        <section id="mitra" className="py-16 px-6 text-center bg-gray-900">
-          <h2 className="text-2xl font-bold text-[#fdb739] mb-6">
-            Mitra Industri
-          </h2>
-          <div className="flex justify-center gap-10 items-center flex-wrap">
-            <img src="/images/ebh.png" alt="eurekabook" className="h-12 transition-all duration-500 ease-in-out transform hover:-translate-y-2" />
-            <img src="/logo.png" alt="jaja.id" className="h-12 transition-all duration-500 ease-in-out transform hover:-translate-y-2" />
-            <img src="/images/jajato.png" alt="jaja_auto" className="h-12 transition-all duration-500 ease-in-out transform hover:-translate-y-2" />
-            <img src="/images/katarasa.png" alt="kata_rasa" className="h-12 transition-all duration-500 ease-in-out transform hover:-translate-y-2" />
-            <img
-              src="/images/rajacepat.png"
-              alt="raja_cepat"
-              className="h-12 transition-all duration-500 ease-in-out transform hover:-translate-y-2"
-            />
-            <img
-              src="/images/eurekalogs.png"
-              alt="eurekalogs"
-              className="h-12 transition-all duration-500 ease-in-out transform hover:-translate-y-2"
-            />
-            <img
-              src="/images/masterdis.png"
-              alt="master_diskon"
-              className="h-12 transition-all duration-500 ease-in-out transform hover:-translate-y-2"
-            />
-          </div>
-        </section>
-
-        {/* ============ service Section =========== */}
-        <section id="layanan" className="bg-gradient-to-r from-orange-400 via-yellow-400 to-yellow-300 py-10 px-4">
+        {/* Benefit Banner */}
+        <section className="bg-gradient-to-r from-orange-400 via-yellow-400 to-yellow-300 py-10 px-4">
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div className="flex items-center justify-center gap-4">
-              <div className="bg-white rounded-full p-3">
-                <img
-                  src="/images/truck.png"
-                  alt="Pengiriman Cepat"
-                  className="h-8 w-8"
-                />
-              </div>
-              <span className="font-semibold text-sm sm:text-base text-gray-800">
-                Pengiriman Cepat
-              </span>
-            </div>
-            <div className="flex items-center justify-center gap-4">
-              <div className="bg-white rounded-full p-3">
-                <img
-                  src="/images/ongkir.png"
-                  alt="Gratis Ongkir"
-                  className="h-8 w-8"
-                />
-              </div>
-              <span className="font-semibold text-sm sm:text-base text-gray-800">
-                Gratis Ongkir
-              </span>
-            </div>
-            <div className="flex items-center justify-center gap-4">
-              <div className="bg-white rounded-full p-3">
-                <img
-                  src="/images/pembayaran.png"
-                  alt="Pembayaran Aman"
-                  className="h-8 w-8"
-                />
-              </div>
-              <span className="font-semibold text-sm sm:text-base text-gray-800">
-                Pembayaran Aman
-              </span>
-            </div>
-            <div className="flex items-center justify-center gap-4">
-              <div className="bg-white rounded-full p-3">
-                <img
-                  src="/images/dijamin.png"
-                  alt="Dijamin 100% Ori"
-                  className="h-8 w-8"
-                />
-              </div>
-              <span className="font-semibold text-sm sm:text-base text-gray-800">
-                Dijamin 100% Ori
-              </span>
-            </div>
+            {[
+              ["truck", "Pengiriman Cepat"],
+              ["ongkir", "Gratis Ongkir"],
+              ["pembayaran", "Pembayaran Aman"],
+              ["dijamin", "Dijamin 100% Ori"],
+            ].map(([icon, label], i) => (
+              <motion.div
+                key={icon}
+                className="flex items-center justify-center gap-4"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+              >
+                <div className="bg-white rounded-full p-3">
+                  <img
+                    src={`/images/${icon}.png`}
+                    alt={label}
+                    className="h-8 w-8"
+                  />
+                </div>
+                <span className="font-semibold text-sm sm:text-base text-gray-800">
+                  {label}
+                </span>
+              </motion.div>
+            ))}
           </div>
         </section>
 
