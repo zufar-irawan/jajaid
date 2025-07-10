@@ -23,14 +23,13 @@ const Header = () => {
         ${isScrolled ? "left-4" : "left-1/2 -translate-x-1/2"}`}
       >
         <Link href={"#beranda"}>
-        <Image
+          <Image
             src="/logo.png"
             alt="Logo Jaja"
             width={120}
-            height={40}
-            className={`transition-all duration-700 ease-in-out ${
-              isScrolled ? "h-12" : "h-16"}`}
-              />
+            height={120}
+            className={`transition-all duration-700 ease-in-out`}
+          />
         </Link>
       </div>
 
