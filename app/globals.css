@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --first-color: #55b4e5;
+  --second-color: #ed5625;
+  --third-color: #fbb338;
 }
 
 @theme inline {
@@ -38,4 +41,3 @@ html {
 .clip-right-services {
   clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
 }
-

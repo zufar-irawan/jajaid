@@ -1,15 +1,12 @@
 "use client";
-import Header from "@/component/header";
-import Footer from "@/component/Footer";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import * as framerMotion from "framer-motion";
-import Image from "next/image";
+import * as FramerMotion from "framer-motion";
 
-const motion = framerMotion.motion;
+const motion = FramerMotion.motion;
 
-const BannerCarousel = () => {
+const Beranda = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -23,14 +20,10 @@ const BannerCarousel = () => {
     pauseOnHover: false,
   };
 
-  const banners = [
-    '/Banner1.jpeg',
-    '/Banner2.jpeg',
-    '/Banner3.jpeg'
-  ];
+  const banners = ["/Banner1.jpeg", "/Banner2.jpeg", "/Banner3.jpeg"];
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div id="beranda" className="relative w-full h-screen overflow-hidden">
       <Slider {...settings} className="h-full">
         {banners.map((banner, index) => (
           <div key={index}>
@@ -38,8 +31,8 @@ const BannerCarousel = () => {
               className="w-full h-screen bg-cover bg-center"
               style={{
                 backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${banner})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                backgroundSize: "cover",
+                backgroundPosition: "center",
               }}
             ></div>
           </div>
@@ -53,6 +46,8 @@ const BannerCarousel = () => {
           transition={{ duration: 1 }}
           className="text-white px-4"
         >
+
+
           <h1 className="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight drop-shadow-lg">
             JAJA ID
           </h1>
@@ -73,4 +68,4 @@ const BannerCarousel = () => {
   );
 };
 
-export default BannerCarousel;
+export default Beranda;
